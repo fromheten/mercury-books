@@ -17,3 +17,6 @@ book.pdf: book.dvi
 	pdflatex book
 	pdflatex book
 	pdflatex book
+
+book.epub: book.dvi
+	pandoc book.tex -o $@
